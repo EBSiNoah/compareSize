@@ -44,10 +44,20 @@ def comN01A01(a,b, N ):
     
     return f[a-b]
 
-    
+def comN01A02( a,b ):
+    f = "=" + ">" + "<"    
+    k=a-b
+    while((k!=1 and k!=-1)and k!=0):
+        k=k//2
+    print(a,b,f[k])
+    return f[k]
+
+def calminus():
+    print((-48)%(-47))
 
 def compareT():
-    comN01(random.randrange(0,100),random.randrange(0,100))
+    comN01A02(random.randrange(0,100),random.randrange(0,100))
+    # calminus()
 
 def main():
     compareT()
